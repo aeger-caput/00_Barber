@@ -1,2 +1,207 @@
 //@import "nullstyle.scss";
+@font-face {
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: 400;
+   src: url("/fonts/PTSans-Regular.woff2") format("woff2");
+   font-display: swap;
+}
 
+@font-face {
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: 700;
+   src: url("/fonts/PTSans-Bold.woff2") format("woff2");
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "PT Sans";
+   font-style: italic;
+   font-weight: 400;
+   src: url("/fonts/PTSans-Italic.woff2") format("woff2");
+}
+
+@font-face {
+   font-family: "PT Sans";
+   font-style: italic;
+   font-weight: 700;
+   src: url("/fonts/PTSans-BoldItalic.woff2") format("woff2");
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: 700;
+   src: url("/fonts/PTSans-NarrowBold.woff2") format("woff2");
+   font-display: swap;
+}
+body {
+   font-family: "PT Sans Narrow", sans-serif;
+   font-size: 16px;
+   line-height: 24px;
+   color: #242424;
+   background-color: #fbf7f4;
+}
+.page-header {
+   color: #ffffff;
+   background: #000000;
+}
+.wrapper {
+}
+.navigation {
+}
+.navigation-link {
+   font-family: "PT Sans Narrow", sans-serif;
+   line-height: 22px;
+   font-weight: 700;
+   text-align: center;
+   color: #ffffff;
+   background-color: #000000;
+   text-decoration: none;
+   text-transform: uppercase;
+
+}
+.navigation-item {
+}
+.navigation-link {
+}
+.navigation-user {
+}
+.visually-hidden {
+}
+
+.main-index {
+   color: #ffffff;
+   background-color: #000000;
+   background-image: url("/img/background01.jpg");
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+}
+
+.advantages {
+}
+.advantages-list {
+}
+.advantages-item {
+}
+.advantages-title {
+   font-family: "PT Sans Narrow", sans-serif;
+   font-size: 32px;
+   line-height: 35px;
+   text-transform: uppercase;
+}
+.advantages-description {
+}
+
+.index-columns {
+   color: #242424;
+   background-color: #fbf7f4;
+   background-image: url(/);
+}
+
+.services {
+}
+.servises-title {
+}
+.servises-list {
+}
+.servises-item {
+}
+.servises-name {
+}
+.servises-price {
+}
+.button {
+}
+.button-all {
+}
+.gallary {
+}
+.gallary-title {
+}
+.slider-image {
+}
+.slider-button {
+}
+.slider-prev {
+}
+.slider-next {
+}
+.slider-pagintion {
+}
+.slider-pagintion-item {
+}
+.slider-pagintion-button {
+}
+.contacts {
+}
+.contacts-title {
+}
+.contacts-subtitle {
+}
+.contacts-address {
+}
+.contacts-address-text {
+}
+.contacts-phone {
+}
+.contact-schedule {
+}
+.contact-schedule-item {
+}
+.button-feedback {
+}
+.appointment {
+}
+.appointment-title {
+}
+.appointment-form {
+}
+.appointment-form-date {
+}
+.form-label {
+}
+.form-label-icon {
+}
+.info {
+}
+.appointment-form-time {
+}
+.page-footer {
+}
+.page-footer-contacts {
+}
+.footer-contacts-logo {
+}
+.footer-contacts-address {
+}
+.footer-contacts-address-text {
+}
+.footer-contacts-phone {
+}
+.footer-contacts-map-link {
+}
+.page-footer-newsletter {
+}
+.page-footer-title {
+}
+.newsletter-form {
+}
+.newsletter-email {
+}
+.field {
+}
+.newsletter-button {
+}
+.page-footer-social {
+}
+.footer-social-list {
+}
+.footer-social-item {
+}
+.about-text {
+}
+.htmlacademy-link {
+}

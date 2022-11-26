@@ -3,7 +3,7 @@
 
 <head>
     <title>Барбершоп</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 </head>
@@ -50,9 +50,9 @@
         </div>
     </header>
 
-    <main>
+    <main class="main-index">
         <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
-        <img src="" alt="Логотип барбершопа Бородинский">
+        <img src="img/logo/logo-full-dark.svg" width="367" height="152" alt="барбершоп Бородинский">
         <section class="advantages">
             <h2 class="visually-hidden">Преимущества</h2>
             <ul class="advantages-list">
@@ -79,33 +79,35 @@
                 </li>
             </ul>
         </section>
-        <section class="services">
-            <h2 class="servises-title"></h2>
-            <ul class="servises-list">
-                <li class="servises-item">
-                    <span class="servises-name">Стрижка машинкой</span>
-                    <b class="servises-price">800 ₽</b>
-                </li>
-                <li class="servises-item">
-                    <span class="servises-name">Стрижка усов</span>
-                    <b class="servises-price">1200 ₽</b>
-                </li>
-                <li class="servises-item">
-                    <span class="servises-name">Груминг</span>
-                    <b class="servises-price">400 ₽</b>
-                </li>
-                <li class="servises-item">
-                    <span class="servises-name">Комплексная стрижка</span>
-                    <b class="servises-price">2300 ₽</b>
-                </li>
-            </ul>
-            <a href="" class="button button-all">
-                посмотреть все
-            </a>
-        </section>
+        <div class="index-columns">
+            <section class="services">
+                <h2 class="servises-title"></h2>
+                <ul class="servises-list">
+                    <li class="servises-item">
+                        <span class="servises-name">Стрижка машинкой</span>
+                        <b class="servises-price">800 ₽</b>
+                    </li>
+                    <li class="servises-item">
+                        <span class="servises-name">Стрижка усов</span>
+                        <b class="servises-price">1200 ₽</b>
+                    </li>
+                    <li class="servises-item">
+                        <span class="servises-name">Груминг</span>
+                        <b class="servises-price">400 ₽</b>
+                    </li>
+                    <li class="servises-item">
+                        <span class="servises-name">Комплексная стрижка</span>
+                        <b class="servises-price">2300 ₽</b>
+                    </li>
+                </ul>
+                <a href="" class="button button-all">
+                    посмотреть все
+                </a>
+            </section>
+        </div>
         <section class="gallary">
             <h2 class="gallary-title">Фотогалерея</h2>
-            <img src="" alt="Примеры работ" class="slider-image">
+            <img src="img/photo.jpg" width="390" height="250" alt="Примеры работ" class="slider-image">
             <button class="slider-button slider-prev" type="button">
                 <span class="visually-hidden">Предидущее фото</span>
             </button>
@@ -192,7 +194,8 @@
     <footer class="page-footer">
         <section class="page-footer-contacts">
             <h2 class="visually-hidden">Контакты</h2>
-            <img src="" alt="Логотип барбершопа Бородинский" class="footer-contacts-logo">
+            <img src="img/logo/logo-short-dark.svg" width="187" height="24" alt="Логотип барбершопа Бородинский"
+                class="footer-contacts-logo">
             <address class="footer-contacts-address">
                 <p class="footer-contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
                 <a href="tel:88005558628" class="footer-contacts-phone">8 800 555-86-28</a>
