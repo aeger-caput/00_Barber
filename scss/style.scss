@@ -98,28 +98,49 @@ body {
 .index-columns {
    color: #242424;
    background-color: #fbf7f4;
-   background-image: url(/);
+   background-image: url(/img/background01.jpg);
 }
 
 .services {
+   text-transform: uppercase;
 }
 .servises-title {
+   font-size: 32px;
+   line-height: 35px;
+   font-weight: 700;
 }
 .servises-list {
+   font-size: 20px;
+   line-height: 28px;
+   font-weight: 700;
 }
 .servises-item {
 }
 .servises-name {
 }
 .servises-price {
+   color: #af7842;
 }
 .button {
+   font-family: inherit;
+   font-size: 16px;
+   line-height: 16px;
+   font-weight: 700;
+   text-align: center;
+   color: #ffffff;
+   background-color: #000000;
+   text-decoration: none;
+   text-transform: uppercase;
 }
 .button-all {
 }
 .gallary {
 }
 .gallary-title {
+   font-size: 32px;
+   line-height: 35px;
+   font-weight: 700;
+   text-transform: uppercase;
 }
 .slider-image {
 }
@@ -136,16 +157,31 @@ body {
 .slider-pagintion-button {
 }
 .contacts {
+   font-weight: 700;
 }
 .contacts-title {
+   font-size: 32px;
+   line-height: 35px;
+   font-weight: 700;
+   text-transform: uppercase;
 }
 .contacts-subtitle {
+   font-size: 20px;
+   line-height: 28px;
+   text-transform: uppercase;
+   color: #af7842;
 }
 .contacts-address {
+   font-style: normal;
 }
 .contacts-address-text {
 }
 .contacts-phone {
+   font-size: 24px;
+   line-height: 29px;
+   text-decoration-line: underline;
+   text-transform: uppercase;
+   color: #242424;
 }
 .contact-schedule {
 }
@@ -156,12 +192,20 @@ body {
 .appointment {
 }
 .appointment-title {
+   font-size: 32px;
+   line-height: 35px;
+   font-weight: 700;
+   text-transform: uppercase;
 }
 .appointment-form {
+   color: #595959;
 }
 .appointment-form-date {
 }
 .form-label {
+   line-height: 24px;
+   font-weight: 700;
+   text-transform: uppercase; 
 }
 .form-label-icon {
 }
@@ -170,22 +214,59 @@ body {
 .appointment-form-time {
 }
 .page-footer {
+   font-size: 14px;
+   font-weight: 700;
+   color: #FFFFFF;
+   background-color: #242424;
+   background-image: url("images/bg-noisy.png");
+   background-repeat: repeat;
 }
+.page-footer a {
+   color: #FFFFFF;
+}
+.page-footer .htmlacademy-link {
+   font-size: 14px;
+   color: #DBB590;
+ }
 .page-footer-contacts {
 }
 .footer-contacts-logo {
 }
 .footer-contacts-address {
+   font-style: normal;
 }
 .footer-contacts-address-text {
+   font-size: 14px;
+   line-height: 20px;
+   font-weight: 700;
+   color: #FFFFFF;
 }
 .footer-contacts-phone {
+   font-family: "PT Sans Narrow", sans-serif;
+   font-size: 20px;
+   line-height: 28px;
+   font-weight: 700;
+   text-decoration: underline;
+   text-transform: uppercase;
 }
 .footer-contacts-map-link {
+   font-family: "PT Sans Narrow", sans-serif;
+   font-size: 20px;
+   line-height: 26px;
+   font-weight: 700;
+   color: #FFFFFF;
+   text-decoration: underline;
+   text-transform: uppercase;
 }
 .page-footer-newsletter {
 }
 .page-footer-title {
+   font-family: "PT Sans Narrow", sans-serif;
+   font-size: 20px;
+   line-height: 28px;
+   font-weight: 700;
+   color: #FFFFFF;
+   text-transform: uppercase;
 }
 .newsletter-form {
 }
