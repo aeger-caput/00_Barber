@@ -80,6 +80,143 @@ body {
    background-repeat: no-repeat;
 }
 
+.main-inner {
+   color: #242424;
+   background-color: #FBF7F4;
+   background-image: url("/img/noisy-texture.png");
+   
+ }
+
+.inner-header-title {
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+.breadcrumbs {
+   color: #242424;
+}
+.breadcrumbs-item {
+}
+.breadcrumbs-link {
+   color: inherit;
+}
+
+.filter-section {
+}
+.catalog-filter {
+}
+.catalog-filter-group {
+}
+.catalog-filter-title {
+   font-size: 20px;
+   line-height: 28px;
+   font-weight: 700;
+   color: #242424;
+   text-transform: uppercase;
+}
+.sorting-section {
+}
+.sorting-type {
+}
+.visually-hidden {
+}
+.select-control {
+}
+.button {
+}
+.button-light {
+   color: #242424;
+   background-color: #FFFFFF;
+}
+
+.product-section {
+}
+.product-list {
+}
+.product-item {
+}
+.product-card {
+   background-color: #FFFFFF;
+}
+.product-card-link {
+   text-decoration: none;
+}
+.product-card-image {
+}
+.product-card-title {
+   font-weight: 700;
+   color: #242424;
+}
+.product-card-price {
+   font-size: 24px;
+   line-height: 29px;
+   font-weight: 700;
+   color: #814B18;
+   text-transform: uppercase;
+}
+.product-card-button {
+}
+.button {
+}
+.pagonation-section {
+}
+.pagonation {
+   background-color: #FFFFFF;
+}
+.pagonation-item {
+}
+.pagonation-link {
+   color: #FFFFFF;
+   background-color: #000000;
+   text-decoration: none;
+   line-height: 16px;
+   font-weight: 700;
+}
+.pagonation-prev {
+}
+.pagonation-disabled {
+   background-color: #595959;
+}
+.visually-hidden {
+}
+.pagonation-current {
+   color: #242424;
+   background-color: #FFFFFF;
+}
+.pagonation-next {
+}
+.pagonation-show-more {
+}
+
+.range-toggle {
+}
+.toggle-min {
+}
+.toggle-max {
+}
+.catalog-filter-label {
+}
+.catalog-filter-input {
+}
+.catalog-filter-list {
+}
+.catalog-filter-item {
+}
+.control {
+}
+.control-input {
+}
+.contol-mark {
+}
+.control-label {
+   font-weight: 700;
+}
+
+.sorting-container{
+   color: #000000;
+   background-color: #FFFFFF;
+}
+
 .advantages {
 }
 .advantages-list {
@@ -98,7 +235,7 @@ body {
 .index-columns {
    color: #242424;
    background-color: #fbf7f4;
-   background-image: url(/img/background01.jpg);
+   background-image: url("/img/noisy-texture.png");
 }
 
 .services {
