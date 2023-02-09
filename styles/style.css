@@ -37,7 +37,20 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -50,6 +63,24 @@ body {
   background: #000000;
 }
 
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  width: 140px;
+  margin-right: 100px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+}
+
 .navigation-link {
   font-family: "PT Sans Narrow", sans-serif;
   line-height: 22px;
@@ -59,6 +90,32 @@ body {
   background-color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.navigation-user {
+  margin-left: auto;
+}
+
+.main-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.catalog-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
 }
 
 .main-index {
@@ -89,12 +146,20 @@ body {
   color: inherit;
 }
 
+.filter-section {
+  width: 220px;
+}
+
 .catalog-filter-title {
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
   color: #242424;
   text-transform: uppercase;
+}
+
+.catalog-right-column {
+  width: 700px;
 }
 
 .button-light {
@@ -153,6 +218,21 @@ body {
   background-color: #FFFFFF;
 }
 
+.advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages-item {
+  width: 277px;
+}
+
 .advantages-title {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
@@ -164,10 +244,18 @@ body {
   color: #242424;
   background-color: #fbf7f4;
   background-image: url("/img/noisy-texture.png");
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .services {
   text-transform: uppercase;
+  width: 390px;
 }
 
 .servises-title {
@@ -198,6 +286,10 @@ body {
   text-transform: uppercase;
 }
 
+.gallary {
+  width: 390px;
+}
+
 .gallary-title {
   font-size: 32px;
   line-height: 35px;
@@ -206,6 +298,7 @@ body {
 }
 
 .contacts {
+  width: 350px;
   font-weight: 700;
 }
 
@@ -236,6 +329,10 @@ body {
   color: #242424;
 }
 
+.appointment {
+  width: 430px;
+}
+
 .appointment-title {
   font-size: 32px;
   line-height: 35px;
@@ -262,6 +359,14 @@ body {
   background-repeat: repeat;
 }
 
+.page-footer-container {
+  width: 940px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
 .page-footer a {
   color: #FFFFFF;
 }
@@ -269,6 +374,11 @@ body {
 .page-footer .htmlacademy-link {
   font-size: 14px;
   color: #DBB590;
+}
+
+.page-footer-contacts {
+  width: 200px;
+  margin-right: 130px;
 }
 
 .footer-contacts-address {
@@ -309,3 +419,14 @@ body {
   color: #FFFFFF;
   text-transform: uppercase;
 }
+
+.page-footer-social {
+  width: 190px;
+  margin-left: auto;
+}
+
+/*
+.advantages, .index-columns, .gallary, .contacts, .appointment {
+   display: none;
+}
+*/

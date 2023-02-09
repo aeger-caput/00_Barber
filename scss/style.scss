@@ -37,7 +37,16 @@
    src: url("/fonts/PTSans-NarrowBold.woff2") format("woff2");
    font-display: swap;
 }
+
+html {
+   height: 100%;
+}
+
 body {
+   height: 100%;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
    font-family: "PT Sans Narrow", sans-serif;
    font-size: 16px;
    line-height: 24px;
@@ -51,7 +60,25 @@ body {
 .wrapper {
 }
 .navigation {
+   display: flex;
+   width: 940px;
+   //justify-content: space-between;
+   margin: 0 auto;
 }
+
+.navigation-logo {
+   width: 140px;
+   margin-right: 100px;
+}
+
+.navigation-list {
+   margin: 0;
+   padding: 0;
+}
+
+.navigation-item {
+}
+
 .navigation-link {
    font-family: "PT Sans Narrow", sans-serif;
    line-height: 22px;
@@ -61,15 +88,30 @@ body {
    background-color: #000000;
    text-decoration: none;
    text-transform: uppercase;
+}
 
-}
-.navigation-item {
-}
-.navigation-link {
-}
 .navigation-user {
+   margin-left: auto;
 }
 .visually-hidden {
+}
+
+.main-container {
+   flex-grow: 1;
+}
+
+.catalog-container{
+   display: flex;
+}
+
+.page-container {
+   width: 940px;
+   margin: 0 auto;
+}
+
+.logo {
+   display: block;
+   margin: 0 auto;
 }
 
 .main-index {
@@ -102,11 +144,15 @@ body {
 }
 
 .filter-section {
+   width: 220px;
 }
+
 .catalog-filter {
 }
+
 .catalog-filter-group {
 }
+
 .catalog-filter-title {
    font-size: 20px;
    line-height: 28px;
@@ -116,14 +162,17 @@ body {
 }
 .sorting-section {
 }
+
 .sorting-type {
 }
-.visually-hidden {
+
+.catalog-right-column {
+   width: 700px;
 }
+
 .select-control {
 }
-.button {
-}
+
 .button-light {
    color: #242424;
    background-color: #FFFFFF;
@@ -219,9 +268,16 @@ body {
 
 .advantages {
 }
+
 .advantages-list {
+   display: flex;
+   justify-content: space-between;
+   padding: 0;
+   margin: 0;
 }
+
 .advantages-item {
+   width: 277px;
 }
 .advantages-title {
    font-family: "PT Sans Narrow", sans-serif;
@@ -236,10 +292,14 @@ body {
    color: #242424;
    background-color: #fbf7f4;
    background-image: url("/img/noisy-texture.png");
+   padding: 40px;
+   display: flex;
+   justify-content: space-between;
 }
 
 .services {
    text-transform: uppercase;
+   width: 390px;
 }
 .servises-title {
    font-size: 32px;
@@ -272,6 +332,7 @@ body {
 .button-all {
 }
 .gallary {
+   width: 390px;
 }
 .gallary-title {
    font-size: 32px;
@@ -294,6 +355,7 @@ body {
 .slider-pagintion-button {
 }
 .contacts {
+   width: 350px;
    font-weight: 700;
 }
 .contacts-title {
@@ -327,6 +389,7 @@ body {
 .button-feedback {
 }
 .appointment {
+   width: 430px;
 }
 .appointment-title {
    font-size: 32px;
@@ -358,6 +421,13 @@ body {
    background-image: url("images/bg-noisy.png");
    background-repeat: repeat;
 }
+
+.page-footer-container {
+   width: 940px;
+   display: flex;
+   margin: 0 auto;
+}
+
 .page-footer a {
    color: #FFFFFF;
 }
@@ -365,8 +435,12 @@ body {
    font-size: 14px;
    color: #DBB590;
  }
+
 .page-footer-contacts {
+   width: 200px;
+   margin-right: 130px;
 }
+
 .footer-contacts-logo {
 }
 .footer-contacts-address {
@@ -395,8 +469,10 @@ body {
    text-decoration: underline;
    text-transform: uppercase;
 }
+
 .page-footer-newsletter {
 }
+
 .page-footer-title {
    font-family: "PT Sans Narrow", sans-serif;
    font-size: 20px;
@@ -413,8 +489,12 @@ body {
 }
 .newsletter-button {
 }
+
 .page-footer-social {
+   width: 190px;
+   margin-left: auto;
 }
+
 .footer-social-list {
 }
 .footer-social-item {
@@ -423,3 +503,9 @@ body {
 }
 .htmlacademy-link {
 }
+
+/*
+.advantages, .index-columns, .gallary, .contacts, .appointment {
+   display: none;
+}
+*/
