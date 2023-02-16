@@ -1,6 +1,6 @@
 //@import "nullstyle.scss";
 @font-face {
-   font-family: "PT Sans";
+   font-family: "PT Sans Narrow";
    font-style: normal;
    font-weight: 400;
    src: url("/fonts/PTSans-Regular.woff2") format("woff2");
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-   font-family: "PT Sans";
+   font-family: "PT Sans Narrow";
    font-style: normal;
    font-weight: 700;
    src: url("/fonts/PTSans-Bold.woff2") format("woff2");
@@ -16,14 +16,14 @@
 }
 
 @font-face {
-   font-family: "PT Sans";
+   font-family: "PT Sans Narrow";
    font-style: italic;
    font-weight: 400;
    src: url("/fonts/PTSans-Italic.woff2") format("woff2");
 }
 
 @font-face {
-   font-family: "PT Sans";
+   font-family: "PT Sans Narrow";
    font-style: italic;
    font-weight: 700;
    src: url("/fonts/PTSans-BoldItalic.woff2") format("woff2");
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-   font-family: "PT Sans";
+   font-family: "PT Sans Narrow";
    font-style: normal;
    font-weight: 700;
    src: url("/fonts/PTSans-NarrowBold.woff2") format("woff2");
@@ -53,12 +53,15 @@ body {
    color: #242424;
    background-color: #fbf7f4;
 }
+
 .page-header {
    color: #ffffff;
    background: #000000;
 }
+
 .wrapper {
 }
+
 .navigation {
    display: flex;
    width: 940px;
@@ -67,19 +70,25 @@ body {
 }
 
 .navigation-logo {
+   align-self: center;
    width: 140px;
    margin-right: 100px;
 }
 
 .navigation-list {
+   display: flex;
+   flex-wrap: wrap;
    margin: 0;
    padding: 0;
+   list-style-type: none;
 }
 
 .navigation-item {
 }
 
 .navigation-link {
+   display: block;
+   padding: 24px 19px;
    font-family: "PT Sans Narrow", sans-serif;
    line-height: 22px;
    font-weight: 700;
@@ -92,12 +101,25 @@ body {
 
 .navigation-user {
    margin-left: auto;
+   .navigation-link{
+      min-width: 16px;
+      min-height: 22px;
+   }
 }
 .visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   padding: 0;
+   bottom: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
 }
 
 .main-container {
    flex-grow: 1;
+   padding: 60px 0; 
 }
 
 .catalog-container{
@@ -112,6 +134,7 @@ body {
 .logo {
    display: block;
    margin: 0 auto;
+   margin-bottom: 60px;
 }
 
 .main-index {
@@ -123,150 +146,15 @@ body {
 }
 
 .main-inner {
+   padding: 40px 0 0 0;
    color: #242424;
    background-color: #FBF7F4;
    background-image: url("/img/noisy-texture.png");
    
  }
 
-.inner-header-title {
-  font-size: 32px;
-  line-height: 35px;
-  text-transform: uppercase;
-}
-.breadcrumbs {
-   color: #242424;
-}
-.breadcrumbs-item {
-}
-.breadcrumbs-link {
-   color: inherit;
-}
-
-.filter-section {
-   width: 220px;
-}
-
-.catalog-filter {
-}
-
-.catalog-filter-group {
-}
-
-.catalog-filter-title {
-   font-size: 20px;
-   line-height: 28px;
-   font-weight: 700;
-   color: #242424;
-   text-transform: uppercase;
-}
-.sorting-section {
-}
-
-.sorting-type {
-}
-
-.catalog-right-column {
-   width: 700px;
-}
-
-.select-control {
-}
-
-.button-light {
-   color: #242424;
-   background-color: #FFFFFF;
-}
-
-.product-section {
-}
-.product-list {
-}
-.product-item {
-}
-.product-card {
-   background-color: #FFFFFF;
-}
-.product-card-link {
-   text-decoration: none;
-}
-.product-card-image {
-}
-.product-card-title {
-   font-weight: 700;
-   color: #242424;
-}
-.product-card-price {
-   font-size: 24px;
-   line-height: 29px;
-   font-weight: 700;
-   color: #814B18;
-   text-transform: uppercase;
-}
-.product-card-button {
-}
-.button {
-}
-.pagonation-section {
-}
-.pagonation {
-   background-color: #FFFFFF;
-}
-.pagonation-item {
-}
-.pagonation-link {
-   color: #FFFFFF;
-   background-color: #000000;
-   text-decoration: none;
-   line-height: 16px;
-   font-weight: 700;
-}
-.pagonation-prev {
-}
-.pagonation-disabled {
-   background-color: #595959;
-}
-.visually-hidden {
-}
-.pagonation-current {
-   color: #242424;
-   background-color: #FFFFFF;
-}
-.pagonation-next {
-}
-.pagonation-show-more {
-}
-
-.range-toggle {
-}
-.toggle-min {
-}
-.toggle-max {
-}
-.catalog-filter-label {
-}
-.catalog-filter-input {
-}
-.catalog-filter-list {
-}
-.catalog-filter-item {
-}
-.control {
-}
-.control-input {
-}
-.contol-mark {
-}
-.control-label {
-   font-weight: 700;
-}
-
-.sorting-container{
-   color: #000000;
-   background-color: #FFFFFF;
-}
-
 .advantages {
+   margin-bottom: 50px;
 }
 
 .advantages-list {
@@ -274,27 +162,38 @@ body {
    justify-content: space-between;
    padding: 0;
    margin: 0;
+   list-style-type: none;
 }
 
 .advantages-item {
    width: 277px;
 }
 .advantages-title {
+   margin: 0 0 50px 0;
    font-family: "PT Sans Narrow", sans-serif;
    font-size: 32px;
    line-height: 35px;
    text-transform: uppercase;
+   text-align: center;
 }
 .advantages-description {
+   margin: 0;
+   text-align: center;
 }
 
 .index-columns {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 30px;
    color: #242424;
    background-color: #fbf7f4;
    background-image: url("/img/noisy-texture.png");
    padding: 40px;
    display: flex;
    justify-content: space-between;
+   .index-columns:last-child {
+      margin-bottom: 0;
+   }
 }
 
 .services {
@@ -302,6 +201,7 @@ body {
    width: 390px;
 }
 .servises-title {
+   margin: 25px 0 25px 0;
    font-size: 32px;
    line-height: 35px;
    font-weight: 700;
@@ -335,6 +235,7 @@ body {
    width: 390px;
 }
 .gallary-title {
+   margin: 25px 0 25px 0;
    font-size: 32px;
    line-height: 35px;
    font-weight: 700;
@@ -359,6 +260,7 @@ body {
    font-weight: 700;
 }
 .contacts-title {
+   margin: 25px 0 25px 0;
    font-size: 32px;
    line-height: 35px;
    font-weight: 700;
@@ -392,6 +294,7 @@ body {
    width: 430px;
 }
 .appointment-title {
+   margin: 25px 0 25px 0;
    font-size: 32px;
    line-height: 35px;
    font-weight: 700;
@@ -413,6 +316,208 @@ body {
 }
 .appointment-form-time {
 }
+
+.inner-header-title {
+   margin: 0 0 16px 0;
+   font-size: 32px;
+   line-height: 35px;
+   text-transform: uppercase;
+ }
+
+ .breadcrumbs {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   color: #242424;
+ }
+ .breadcrumbs-item {
+   margin: 0 32px 32px 0;
+ }
+ .breadcrumbs-link {
+    color: inherit;
+ }
+ 
+ .filter-section {
+    width: 220px;
+ }
+ 
+ .catalog-filter {
+   margin: 0 16px 0 0;
+ }
+ 
+ .catalog-filter-group {
+ }
+ 
+ .catalog-filter-title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #242424;
+    text-transform: uppercase;
+ }
+ 
+ 
+ .catalog-right-column {
+    width: 700px;
+ }
+ 
+ .select-control {
+ }
+ 
+ .button-light {
+    color: #242424;
+    background-color: #FFFFFF;
+ }
+ 
+ 
+ 
+ .range-toggle {
+ }
+ .toggle-min {
+ }
+ .toggle-max {
+ }
+ .catalog-filter-label {
+ }
+ .catalog-filter-input {
+ }
+ .catalog-filter-list {
+ }
+ .catalog-filter-item {
+ }
+ .control {
+ }
+ .control-input {
+ }
+ .contol-mark {
+ }
+ .control-label {
+    font-weight: 700;
+ }
+ 
+.sorting-section {
+}
+
+.sorting-container {
+   display: flex;
+   margin: 0 0 16px 0;
+   padding: 16px;
+   color: #000000;
+   background-color: #FFFFFF;
+}
+
+.sorting-container .button {
+   width: 56px;
+   height: 44px;
+   display: block;
+}
+
+
+.sorting-type {
+ margin: 0 auto 0 0;
+}
+
+.product-section {
+   margin: 0 0 25px 0;
+}
+
+.product-list {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+.product-item {
+}
+
+.product-card {
+   background-color: #FFFFFF;
+}
+
+.product-card-link {
+   text-decoration: none;
+}
+.product-card-image {
+}
+
+.product-card-title {
+   font-weight: 700;
+   color: #242424;
+}
+.product-card-price {
+   font-size: 24px;
+   line-height: 29px;
+   font-weight: 700;
+   color: #814B18;
+   text-transform: uppercase;
+}
+
+.product-card-button {
+}
+
+.button {
+}
+
+.pagonation-section {
+   display: flex;
+   margin: 0 0 60px 0;
+   padding: 16px;
+   background-color: #ffffff;
+}
+
+.pagonation {
+   display: flex;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   
+}
+
+.pagonation-item {
+}
+
+.pagonation-item:not(:last-child) {
+   margin: 0 8px 0 0;
+}
+
+.pagonation-link {
+   display: block;
+   box-sizing: border-box;
+   width: 50px;
+   height: 44px;
+   padding: 14px 20px 14px 20px;
+   color: #FFFFFF;
+   background-color: #000000;
+   text-decoration: none;
+   line-height: 16px;
+   font-weight: 700;
+}
+
+.pagonation-show-more {
+   padding: 14px 20px 14px 20px;
+   margin: 0 0 0 auto;
+}
+
+.pagonation-prev {
+}
+
+.pagonation-disabled {
+   background-color: #595959;
+}
+
+.pagonation-current {
+   color: #242424;
+   background-color: #FFFFFF;
+}
+
+.pagonation-next {
+}
+
+
+
+
 .page-footer {
    font-size: 14px;
    font-weight: 700;
@@ -426,6 +531,7 @@ body {
    width: 940px;
    display: flex;
    margin: 0 auto;
+   padding: 40px 0;
 }
 
 .page-footer a {
@@ -434,7 +540,7 @@ body {
 .page-footer .htmlacademy-link {
    font-size: 14px;
    color: #DBB590;
- }
+}
 
 .page-footer-contacts {
    width: 200px;
@@ -443,15 +549,18 @@ body {
 
 .footer-contacts-logo {
 }
+
 .footer-contacts-address {
    font-style: normal;
 }
+
 .footer-contacts-address-text {
    font-size: 14px;
    line-height: 20px;
    font-weight: 700;
    color: #FFFFFF;
 }
+
 .footer-contacts-phone {
    font-family: "PT Sans Narrow", sans-serif;
    font-size: 20px;
@@ -460,6 +569,7 @@ body {
    text-decoration: underline;
    text-transform: uppercase;
 }
+
 .footer-contacts-map-link {
    font-family: "PT Sans Narrow", sans-serif;
    font-size: 20px;
@@ -474,6 +584,7 @@ body {
 }
 
 .page-footer-title {
+   margin: 0 0 14px 0;
    font-family: "PT Sans Narrow", sans-serif;
    font-size: 20px;
    line-height: 28px;
@@ -481,12 +592,16 @@ body {
    color: #FFFFFF;
    text-transform: uppercase;
 }
+
 .newsletter-form {
 }
+
 .newsletter-email {
 }
+
 .field {
 }
+
 .newsletter-button {
 }
 
@@ -496,11 +611,25 @@ body {
 }
 
 .footer-social-list {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
 }
 .footer-social-item {
+   width: 56px;
+   height: 44px;
+   margin: 0 8px 8px 0;
 }
+
+.footer-social-item:nth-child(3n) {
+   margin: 0;
+}
+
 .about-text {
 }
+
 .htmlacademy-link {
 }
 
