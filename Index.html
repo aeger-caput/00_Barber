@@ -163,38 +163,40 @@
                     <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
                     <form action="https://echo.htmlacademy.ru/" class="appointment-form" method="post"
                         name="appointment-form">
-                        <p class="appointment-form-date">
+                        <p class="appointment-form-date field-group">
                             <span class="form-label form-label-icon">
-                                <label for="appointment-date">Дата</label>
-                                <button type="button" class="info">
-                                    <span class="visually-hidden">Просмотреть дополнительную информацию</span>
-                                </button>
+                                <label for="appointment-date">Дата
+                                    <button type="button" class="info">
+                                        <span class="visually-hidden">Просмотреть дополнительную информацию</span>
+                                    </button>
+                                </label>
                             </span>
                             <input type="date" name="appointment-date" id="appointment-date" placeholder="01.01.2022">
                         </p>
-                        <p class="appointment-form-time">
+                        <p class="appointment-form-time field-group">
                             <span class="form-label form-label-icon">
-                                <label for="appointment-time">Время</label>
-                                <button type="button" class="info">
-                                    <span class="visually-hidden">Просмотреть дополнительную информацию</span>
-                                </button>
+                                <label for="appointment-time">Время
+                                    <button type="button" class="info">
+                                        <span class="visually-hidden">Просмотреть дополнительную информацию</span>
+                                    </button>
+                                </label>
                             </span>
                             <input type="time" name="appointment-time" id="appointment-time" placeholder="10:00">
                         </p>
-                        <p class="appointment-form-time">
+                        <p class="appointment-form-phone field-group">
                             <span class="form-label form-label-icon">
                                 <label for="appointment-phone">Телефон</label>
                             </span>
                             <input type="tel" name="appointment-phone" id="appointment-phone"
                                 placeholder="+7 800 000-00-00">
                         </p>
-                        <p class="appointment-form-time">
+                        <p class="appointment-form-name field-group">
                             <span class="form-label form-label-icon">
                                 <label for="appointment-username">Ваше имя</label>
                             </span>
                             <input type="text" name="appointment-username" id="appointment-username">
                         </p>
-                        <button class="button" type="submit">Записаться</button>
+                        <button class="button appointment-submit" type="submit">Записаться</button>
                     </form>
                 </section>
             </div>

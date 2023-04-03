@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   src: url("/fonts/PTSans-Regular.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url("/fonts/PTSans-Bold.woff2") format("woff2");
@@ -15,14 +15,14 @@
 }
 
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans";
   font-style: italic;
   font-weight: 400;
   src: url("/fonts/PTSans-Italic.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans";
   font-style: italic;
   font-weight: 700;
   src: url("/fonts/PTSans-BoldItalic.woff2") format("woff2");
@@ -42,8 +42,6 @@ html {
 }
 
 body {
-  height: 100%;
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,7 +49,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "PT Sans Narrow", sans-serif;
+  min-height: 100%;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #242424;
@@ -308,6 +308,11 @@ body {
 }
 
 .appointment-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 114px 74px 208px;
+      grid-template-columns: 114px 74px 208px;
+  gap: 14px 16px;
   color: #595959;
 }
 
@@ -315,6 +320,31 @@ body {
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.info {
+  display: none;
+}
+
+.appointment-form-name {
+  grid-column: 1 / -1;
+}
+
+.appointment-submit {
+  grid-column: 1 / -1;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.field-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
 }
 
 .inner-header-title {
@@ -398,17 +428,37 @@ body {
 }
 
 .product-list {
-  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (220px)[3];
+      grid-template-columns: repeat(3, 220px);
+  gap: 20px;
+  margin: 0 0 24px 0;
   padding: 0;
   list-style-type: none;
 }
 
 .product-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px min-content auto min-content 16px;
+      grid-template-rows: 200px -webkit-min-content auto -webkit-min-content 16px;
+      grid-template-rows: 200px min-content auto min-content 16px;
+  -ms-grid-columns: 16px 188px 16px;
+      grid-template-columns: 16px 188px 16px;
   background-color: #FFFFFF;
 }
 
-.product-card-link {
+.product-card-image-link {
+  grid-column: 1 / -1;
   text-decoration: none;
+}
+
+.product-card-title-link {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  margin: 16px 0 8px 0;
 }
 
 .product-card-title {
@@ -417,11 +467,21 @@ body {
 }
 
 .product-card-price {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  margin: 0 0 16px 0;
   font-size: 24px;
   line-height: 29px;
   font-weight: 700;
   color: #814B18;
   text-transform: uppercase;
+}
+
+.product-card-button {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
 }
 
 .pagonation-section {
